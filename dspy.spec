@@ -1,19 +1,18 @@
 %define libname libdspy-1
 %define sover 1
 
-Name:           d-spy
+Name:           dspy
 Version:        1.2.0
-Release:        0
+Release:        1
 Summary:        A D-Bus explorer for GNOME
-License:        GPL-3.0-or-later AND LGPL-3.0-or-later
+License:        GPL-3.0
 URL:            https://gitlab.gnome.org/GNOME/d-spy
-Source:         %{name}-%{version}.tar.xz
+Source:         https://download.gnome.org/sources/dspy/1.2/dspy-%{version}.tar.xz
 
 # appstream-glib BR disabled until upstream fixes the metadata test
 # BuildRequires: appstream-glib
 BuildRequires:  desktop-file-utils
-BuildRequires:  c_compiler
-BuildRequires:  libxml2-tools
+BuildRequires:  libxml2-utils
 BuildRequires:  meson >= 0.56.0
 BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(gio-2.0) >= 2.68
