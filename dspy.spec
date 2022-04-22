@@ -47,11 +47,6 @@ Development/header files for %{name}.
 %install
 %meson_install
 
-%check
-%meson_test
-
-%ldconfig_scriptlets -n %{libname}-%{sover}
-
 %files
 %license COPYING COPYING.lgpl3
 %doc NEWS
