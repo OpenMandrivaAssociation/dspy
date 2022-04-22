@@ -1,5 +1,6 @@
 %define libname libdspy-1
 %define sover 1
+%define oname d-spy
 
 Name:           dspy
 Version:        1.2.0
@@ -50,7 +51,7 @@ Development/header files for %{name}.
 %files
 %license COPYING COPYING.lgpl3
 %doc NEWS
-%{_bindir}/%{name}
+%{_bindir}/%{oname}
 %{_datadir}/appdata/org.gnome.dspy.appdata.xml
 %{_datadir}/applications/org.gnome.dspy.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.dspy.gschema.xml
