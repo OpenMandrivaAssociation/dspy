@@ -65,3 +65,4 @@ Development/header files for %{name}.
 %files devel
 %{_includedir}/dspy-%{sover}
 %{_libdir}/%{libname}.so
+%{_libdir}/pkgconfig/dspy-1.pc
