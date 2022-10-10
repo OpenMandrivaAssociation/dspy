@@ -39,7 +39,7 @@ Requires:       %{libname}-%{sover} = %{version}
 Development/header files for %{name}.
 
 %prep
-%autosetup -p1
+%autosetup -n %{oname}-%{version} -p1
 
 %build
 %meson \
