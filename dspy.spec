@@ -3,12 +3,13 @@
 %define oname d-spy
 
 Name:           dspy
-Version:        1.2.1
+Version:        1.4.0
 Release:        1
 Summary:        A D-Bus explorer for GNOME
 License:        GPL-3.0
 URL:            https://gitlab.gnome.org/GNOME/d-spy
-Source:         https://download.gnome.org/sources/dspy/1.2/dspy-%{version}.tar.xz
+Source0:	https://gitlab.gnome.org/GNOME/d-spy/-/archive/%{version}/d-spy-%{version}.tar.bz2
+#Source:         https://download.gnome.org/sources/d-spy/1.2/dspy-%{version}.tar.xz
 
 # appstream-glib BR disabled until upstream fixes the metadata test
 # BuildRequires: appstream-glib
@@ -38,7 +39,7 @@ Requires:       %{libname}-%{sover} = %{version}
 Development/header files for %{name}.
 
 %prep
-%autosetup -p1
+%autosetup -n %{oname}-%{version} -p1
 
 %build
 %meson \
