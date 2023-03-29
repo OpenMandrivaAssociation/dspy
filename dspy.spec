@@ -53,7 +53,7 @@ Development/header files for %{name}.
 %license COPYING COPYING.lgpl3
 %doc NEWS
 %{_bindir}/%{oname}
-#{_datadir}/appdata/org.gnome.dspy.appdata.xml
+%{_datadir}/metainfo/org.gnome.dspy.appdata.xml
 %{_datadir}/applications/org.gnome.dspy.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.dspy.gschema.xml
 %{_datadir}/icons/hicolor/scalable/apps/org.gnome.dspy.devel.svg
