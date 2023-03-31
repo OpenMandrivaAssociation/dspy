@@ -4,7 +4,7 @@
 
 Name:           dspy
 Version:        1.6.0
-Release:        1
+Release:        2
 Summary:        A D-Bus explorer for GNOME
 License:        GPL-3.0
 URL:            https://gitlab.gnome.org/GNOME/d-spy
