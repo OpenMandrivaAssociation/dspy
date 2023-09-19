@@ -49,7 +49,9 @@ Development/header files for %{name}.
 %install
 %meson_install
 
-%files
+%find_lang d-spy
+
+%files -f d-spy.lang
 %license COPYING COPYING.lgpl3
 %doc NEWS
 %{_bindir}/%{oname}
