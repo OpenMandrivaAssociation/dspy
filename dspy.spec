@@ -3,7 +3,7 @@
 %define oname d-spy
 
 Name:           dspy
-Version:        1.8.0
+Version:        1.9.0
 Release:        1
 Summary:        A D-Bus explorer for GNOME
 License:        GPL-3.0
@@ -13,6 +13,7 @@ Source0:	https://gitlab.gnome.org/GNOME/d-spy/-/archive/%{version}/d-spy-%{versi
 
 # appstream-glib BR disabled until upstream fixes the metadata test
 # BuildRequires: appstream-glib
+BuildRequires:	gettext
 BuildRequires:  desktop-file-utils
 BuildRequires:  libxml2-utils
 BuildRequires:  meson >= 0.56.0
