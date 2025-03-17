@@ -63,7 +63,7 @@ Development/header files for %{name}.
 %{_datadir}/icons/hicolor/symbolic/apps/org.gnome.dspy-symbolic.svg
 
 %files -n %{libname}-%{sover}
-%{_libdir}/%{libname}.so.*
+#{_libdir}/%{libname}.so.*
 
 %files devel
 %{_includedir}/dspy-%{sover}
