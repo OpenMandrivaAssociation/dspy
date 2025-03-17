@@ -22,22 +22,11 @@ BuildRequires:  pkgconfig(gio-2.0) >= 2.68
 BuildRequires:  pkgconfig(gtk4) >= 4.6
 BuildRequires:  pkgconfig(libadwaita-1) >= 1.0
 
+Obsoletes: %{libname}-%{sover}
+Obsoletes: dspy-devel
+
 %description
 D-Spy is a simple tool to explore D-Bus connections.
-
-%package        -n %{libname}-%{sover}
-Summary:        Shared library for %{name}
-
-%description    -n %{libname}-%{sover}
-Shared library for %{name}.
-
-%package        devel
-Summary:        Development/header files for %{name}
-Requires:       %{name} = %{version}
-Requires:       %{libname}-%{sover} = %{version}
-
-%description    devel
-Development/header files for %{name}.
 
 %prep
 %autosetup -n %{oname}-%{version} -p1
@@ -61,11 +50,3 @@ Development/header files for %{name}.
 %{_datadir}/glib-2.0/schemas/org.gnome.dspy.gschema.xml
 %{_datadir}/icons/hicolor/scalable/apps/org.gnome.dspy.svg
 %{_datadir}/icons/hicolor/symbolic/apps/org.gnome.dspy-symbolic.svg
-
-%files -n %{libname}-%{sover}
-#{_libdir}/%{libname}.so.*
-
-%files devel
-#{_includedir}/dspy-%{sover}
-#{_libdir}/%{libname}.so
-#{_libdir}/pkgconfig/dspy-1.pc
