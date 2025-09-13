@@ -50,3 +50,4 @@ D-Spy is a simple tool to explore D-Bus connections.
 %{_datadir}/glib-2.0/schemas/org.gnome.dspy.gschema.xml
 %{_datadir}/icons/hicolor/scalable/apps/org.gnome.dspy.svg
 %{_datadir}/icons/hicolor/symbolic/apps/org.gnome.dspy-symbolic.svg
+%{_datadir}/dbus-1/services/org.gnome.dspy.service
