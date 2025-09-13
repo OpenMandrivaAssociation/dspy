@@ -3,7 +3,7 @@
 %define oname d-spy
 
 Name:           dspy
-Version:        48.0
+Version:        49.0
 Release:        1
 Summary:        A D-Bus explorer for GNOME
 License:        GPL-3.0
@@ -21,6 +21,7 @@ BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(gio-2.0) >= 2.68
 BuildRequires:  pkgconfig(gtk4) >= 4.6
 BuildRequires:  pkgconfig(libadwaita-1) >= 1.0
+BuildRequires:	pkgconfig(libdex-1)
 
 Obsoletes: %{libname}-%{sover}
 Obsoletes: dspy-devel
