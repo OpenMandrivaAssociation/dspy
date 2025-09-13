@@ -11,8 +11,7 @@ URL:            https://gitlab.gnome.org/GNOME/d-spy
 Source0:	https://gitlab.gnome.org/GNOME/d-spy/-/archive/%{version}/d-spy-%{version}.tar.bz2
 #Source:         https://download.gnome.org/sources/d-spy/1.2/dspy-%{version}.tar.xz
 
-# appstream-glib BR disabled until upstream fixes the metadata test
-# BuildRequires: appstream-glib
+BuildRequires:	appstream
 BuildRequires:	gettext
 BuildRequires:  desktop-file-utils
 BuildRequires:  libxml2-utils
@@ -46,7 +45,7 @@ D-Spy is a simple tool to explore D-Bus connections.
 %license COPYING COPYING.lgpl3
 %doc NEWS
 %{_bindir}/%{oname}
-%{_datadir}/metainfo/org.gnome.dspy.appdata.xml
+%{_datadir}/metainfo/org.gnome.dspy.metainfo.xml
 %{_datadir}/applications/org.gnome.dspy.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.dspy.gschema.xml
 %{_datadir}/icons/hicolor/scalable/apps/org.gnome.dspy.svg
