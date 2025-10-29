@@ -3,7 +3,7 @@
 %define oname d-spy
 
 Name:           dspy
-Version:        49.1
+Version:        49.2
 Release:        1
 Summary:        A D-Bus explorer for GNOME
 License:        GPL-3.0
